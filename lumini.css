@@ -1,0 +1,133 @@
+body {
+    background-color: #3c3a56;
+    color: #cfcdee;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+}
+
+.fit {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 720px;
+}
+
+.top {
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 68px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#central {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+#inner {
+    display: block;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    height: 0px;
+    width: 0px;
+    /* background-color: white; */
+}
+
+.bottom {
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.bottom span {
+    font-size: 48px;
+}
+.board {
+    border: 1px solid red;
+}
+
+.header {
+    height: 6vh;
+    flex-shrink: 0;
+    max-width: 720px;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 5vh 5vh 1fr 5vh 5vh;
+    grid-gap: 0;
+    color: #FAFAFF;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    user-select: none;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 4vh;
+    line-height: 6vh;
+    height: 6vh;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header button {
+    z-index: 1000;
+    cursor: pointer;
+    padding: 0;
+    width: 5vh;
+    height: 6vh;
+    background-color: transparent;
+    border: none;
+    color: #B7AEB4;
+    font-weight: 400;
+    line-height: 1em;
+    font-size: 2vh;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header button img,
+button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #B7AEB4;
+    border-radius: 20%;
+    width: 3vh;
+    height: 3vh;
+    margin: 0 0.25vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.header button.rotate img {
+    transform: rotate(180deg);
+}
+
+#bar,
+#stats {
+    justify-content: flex-end;
+}
+
+#help,
+#config {
+    justify-content: flex-start;
+}
